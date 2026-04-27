@@ -28,6 +28,7 @@ python --version
 pip --version
 # pip 25.0.1
 ```
+<img width="685" height="117" alt="image" src="https://github.com/user-attachments/assets/8e18f2cf-5bb8-4d64-87b4-9fc0d7f84edb" />
 
 ### 1.2 Installation de frida et frida-tools
 
