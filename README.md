@@ -179,12 +179,16 @@ Failed to spawn: java.lang.reflect.InvocationTargetException
 **Cause :** UnCrackable1 détecte l'environnement root/émulateur et se ferme.  
 **Solution :** Ajout du bypass de détection root dans le script.
 
+<img width="975" height="259" alt="image" src="https://github.com/user-attachments/assets/dc057de6-a9dc-449f-8fc7-438acaf5e49d" />
+
+
 **Deuxième erreur :**
 ```
 Failed to load script: 'utf-8' codec can't decode byte 0xe9
 ```
 **Cause :** Caractères accentués français dans les commentaires.  
 **Solution :** Recréation du fichier avec `-Encoding UTF8` et suppression des accents.
+
 
 ### 5.4 Résultat final
 
