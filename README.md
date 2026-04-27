@@ -46,6 +46,7 @@ python -c "import frida; print(frida.__version__)"
 ```
 
 
+<img width="437" height="68" alt="image" src="https://github.com/user-attachments/assets/9ebfa361-cd10-4824-8403-14f576e6a4e4" />
 
 
 ---
@@ -60,6 +61,7 @@ adb devices
 # List of devices attached
 # emulator-5554   device
 ```
+
 
 
 ---
@@ -116,7 +118,7 @@ adb forward tcp:27042 tcp:27042
 adb forward tcp:27043 tcp:27043
 ```
 
-> **[SCREENSHOT 3]** — Sortie de `adb shell ps | findstr frida` confirmant frida-server actif
+
 
 ---
 
@@ -134,7 +136,7 @@ frida-ps -Uai
 
 Résultat : liste des applications installées avec leurs packages.
 
-> **[SCREENSHOT 4]** — Sortie de `frida-ps -U` et `frida-ps -Uai`
+
 
 ---
 
@@ -191,7 +193,8 @@ Spawned `owasp.mstg.uncrackable1`. Resuming main thread!
 [+] Bypass root OK
 ```
 
-> **[SCREENSHOT 5]** — Console Frida affichant le bypass root et Java.perform OK
+![Uploading preview.webp…]()
+
 
 ---
 
@@ -223,7 +226,8 @@ frida -U -f owasp.mstg.uncrackable1 -l F:\hello.js
 
 Toutes ces fonctions sont interceptables via `Interceptor.attach()`.
 
-> **[SCREENSHOT 6]** — Résultats des commandes Process dans la console Frida
+<img width="808" height="353" alt="image" src="https://github.com/user-attachments/assets/4c51c84d-1a76-42e4-82cc-a3d9dadea89a" />
+
 
 ---
 
@@ -248,7 +252,7 @@ Process.enumerateModules().filter(m =>
 
 **Conclusion :** L'application utilise **Conscrypt** (implémentation Android de SSL/TLS) avec cryptographie native active.
 
-> **[SCREENSHOT 7]** — Résultat du filtre sur les modules crypto/ssl
+
 
 ---
 
@@ -292,7 +296,8 @@ Process.enumerateModules().filter(m =>
 **Résultat :** Accès au répertoire des certificats CA système.  
 **Interprétation :** L'application initialise une vérification des certificats SSL/TLS au démarrage.
 
-> **[SCREENSHOT 8]** — Résultat du hook_file_java.js montrant l'accès à cacerts
+
+![Uploading image.png…]()
 
 ---
 
