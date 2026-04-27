@@ -303,7 +303,8 @@ Process.enumerateModules().filter(m =>
 **Interprétation :** L'application initialise une vérification des certificats SSL/TLS au démarrage.
 
 
-![Uploading image.png…]()
+
+<img width="975" height="259" alt="image" src="https://github.com/user-attachments/assets/60e32bd5-5286-489a-be45-d42a32ba3a39" />
 
 ---
 
