@@ -198,7 +198,8 @@ Spawned `owasp.mstg.uncrackable1`. Resuming main thread!
 [+] Bypass root OK
 ```
 
-![Uploading preview.webp…]()
+<img width="1163" height="524" alt="preview" src="https://github.com/user-attachments/assets/b2af318f-f2a8-41f5-a76b-e092ed02d4ec" />
+
 
 
 ---
